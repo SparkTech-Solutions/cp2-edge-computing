@@ -223,7 +223,7 @@ void loop() {
         tone(buzina, 1000); // Ativa a buzina com tom de 1000 Hz
         delay(100); // Pequeno atraso para evitar oscilações
         // Lê novamente o valor da umidade
-        mediaHumidity = dht.readHumidity();
+        mediaTemperature = dht.readTemperature();
       }
     noTone(buzina);
     mediaCiclosTemp += mediaTemperature;
